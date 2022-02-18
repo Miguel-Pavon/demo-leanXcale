@@ -1,0 +1,5 @@
+type Query {
+
+fechLoans:[Loans]!
+fechLoansById(id:String!):Loans!
+}

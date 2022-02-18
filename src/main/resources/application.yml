@@ -1,0 +1,7 @@
+
+
+connection:
+  driver-class-name: com.leanxcale.client.Driver
+  url: jdbc:leanxcale://7bde527560231cd63981.lxc-db.com:1522/db
+  username: app
+  password: app
