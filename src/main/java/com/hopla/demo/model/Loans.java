@@ -1,6 +1,7 @@
 package com.hopla.demo.model;
 
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 @Table(name="LOANS",schema = "app")
 @Data
 @Entity
+@Builder
 public class Loans {
 
     @Id
