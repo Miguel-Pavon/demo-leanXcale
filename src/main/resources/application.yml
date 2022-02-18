@@ -1,7 +1,15 @@
 
 
-connection:
-  driver-class-name: com.leanxcale.client.Driver
-  url: jdbc:leanxcale://7bde527560231cd63981.lxc-db.com:1522/db
-  username: app
-  password: app
+spring:
+  jpa:
+    database: DEFAULT
+    show-sql: true
+    platform: com.leanxcale.connector.hibernate.LxDialect
+    properties:
+      hibernate:
+        dialect: com.leanxcale.connector.hibernate.LxDialect
+  datasource:
+    url: jdbc:leanxcale://7bde527560231cd63981.lxc-db.com:1522/db
+    username: app
+    password: app
+    driverClassName: com.leanxcale.client.Driver
