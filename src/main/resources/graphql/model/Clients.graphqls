@@ -1,0 +1,8 @@
+type Clients{
+    dni:String
+    name:String
+    last_name:String
+    gender:String
+    birtDate:String
+    phone:String
+}

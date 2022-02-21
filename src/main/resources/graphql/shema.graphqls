@@ -1,5 +1,6 @@
 type Query {
 
-fechLoans:[Loans]!
-fechLoansById(id:String!):Loans!
+
+clientPage(id:String,perPage:Int):ClientsPage @page(for:"Clients")
+fechClientById(id:String!):Clients!
 }
