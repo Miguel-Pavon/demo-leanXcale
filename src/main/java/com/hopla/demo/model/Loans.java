@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Table(name="LOANS",schema = "app")
 @Data
 @Entity
-@Builder
 public class Loans {
 
     @Id
