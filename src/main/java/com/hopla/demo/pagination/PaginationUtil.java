@@ -1,5 +1,8 @@
 package com.hopla.demo.pagination;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PaginationUtil {
 
     public Integer sanetizePageSize(Integer userPageSize,Integer defaultValue){

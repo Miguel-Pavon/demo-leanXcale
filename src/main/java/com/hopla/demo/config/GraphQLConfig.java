@@ -68,8 +68,9 @@ public class GraphQLConfig {
                         .name("GraphPageInfo")
                         .fieldDefinition(new FieldDefinition("hasPreviousPage", new NonNullType(new TypeName("Boolean"))))
                         .fieldDefinition(new FieldDefinition("hasNextPage",new NonNullType(new TypeName("Boolean"))))
-                        .fieldDefinition(new FieldDefinition("starCursor",new TypeName("String")))
-                        .fieldDefinition(new FieldDefinition("endCursor",new TypeName("String")))
+                        .fieldDefinition(new FieldDefinition("page",new TypeName("Int")))
+                        .fieldDefinition(new FieldDefinition("totalElement",new TypeName("Int")))
+                        .fieldDefinition(new FieldDefinition("totalPage",new TypeName("Int")))
                         .build());
                 pageObjectDefinitions.addAll(typeNames.stream().map(typeName ->
                         ObjectTypeDefinition.newObjectTypeDefinition()

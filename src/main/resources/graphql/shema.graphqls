@@ -1,6 +1,5 @@
 type Query {
 
-
-clientPage(id:String,perPage:Int):ClientsPage @page(for:"Clients")
+clientPage(page:Int!,perPage:Int!):ClientsPage @page(for:"Clients")
 fechClientById(id:String!):Clients!
 }

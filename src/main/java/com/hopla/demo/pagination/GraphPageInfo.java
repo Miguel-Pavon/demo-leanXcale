@@ -7,9 +7,12 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public class GraphPageInfo {
 
-    private final String startCursor;
 
-    private final String endCursor;
+    private final int page;
+
+    private final long totalElement;
+
+    private final int totalPage;
 
     private final boolean hasPreviousPage;
 

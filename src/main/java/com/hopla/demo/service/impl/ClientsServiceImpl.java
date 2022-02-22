@@ -24,7 +24,8 @@ public class ClientsServiceImpl implements ClientsService {
     }
 
     @Override
-    public Page<Clients> findPage(Integer size) {
-        return repository.findAll(PageRequest.of(0,size, Sort.by("dni").descending()));
+    public Page<Clients> findPage(Integer page, Integer size) {
+        return repository.findAll(PageRequest.of(page,size));
     }
+
 }

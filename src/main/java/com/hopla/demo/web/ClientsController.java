@@ -12,6 +12,7 @@ import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Nullable;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 @Controller
@@ -20,19 +21,19 @@ public class ClientsController {
     @Autowired
     ClientsService clientsService;
 
+    @Autowired
     PaginationUtil paginationUtil;
 
 
 
 
     @QueryMapping
-    public GraphPage<Clients> clientpage(@Argument @Nullable String id , @Argument @Nullable Integer perPage){
-        Integer pageSize =paginationUtil.sanetizePageSize(perPage,100);
-        Page<Clients> clientsPage =clientsService.findPage(pageSize);
+    public GraphPage<Clients> clientPage(@Argument Integer page, @Argument Integer perPage){
+        Page<Clients> clientsPage =clientsService.findPage(page,perPage);
         List<Clients>clients = clientsPage.getContent();
-        String firstCursor = clients.isEmpty() ? null : clients.get(0).getDni();
-        String lastCursor = clients.isEmpty() ? null : clients.get(clients.size()-1).getDni();
-        GraphPageInfo graphPageInfo = new GraphPageInfo(firstCursor,lastCursor,id!=null,clientsPage.hasNext()) ;
+        GraphPageInfo graphPageInfo = new GraphPageInfo(clientsPage.getNumber(),clientsPage.getTotalElements(),clientsPage.getTotalPages(),clientsPage.hasPrevious(),clientsPage.hasNext()) ;
         return new GraphPage<>(clients,graphPageInfo);
     }
+
+
 }
