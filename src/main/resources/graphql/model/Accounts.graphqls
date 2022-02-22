@@ -1,0 +1,7 @@
+type Accounts{
+    name:String
+    user:String
+    account_name:String
+    saldo:Float
+
+}

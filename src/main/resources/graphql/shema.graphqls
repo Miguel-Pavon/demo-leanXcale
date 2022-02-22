@@ -1,5 +1,5 @@
 type Query {
-
 clientPage(page:Int!,perPage:Int!):ClientsPage @page(for:"Clients")
-fechClientById(id:String!):Clients!
+fetchClientById(id:String!):Clients!
+fetchAccount:[Accounts]!
 }

@@ -1,7 +1,6 @@
-package com.hopla.demo.repository;
+package com.hopla.demo.repository.leanXcale;
 
-import com.hopla.demo.model.Clients;
-import com.hopla.demo.model.Loans;
+import com.hopla.demo.model.leanXcale.Clients;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -5,4 +5,5 @@ type Clients{
     gender:String
     birtDate:String
     phone:String
+    creditCards:[CreditCards]!
 }

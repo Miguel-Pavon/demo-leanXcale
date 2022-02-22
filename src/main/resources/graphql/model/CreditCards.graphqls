@@ -1,0 +1,7 @@
+type CreditCards{
+    number:String
+    owner:String
+    type:String
+    ccv:String
+    expiration:String
+}

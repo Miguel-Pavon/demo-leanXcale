@@ -1,13 +1,14 @@
 package com.hopla.demo.service.impl;
 
-import com.hopla.demo.model.Clients;
-import com.hopla.demo.model.Loans;
-import com.hopla.demo.repository.ClientsRepository;
+import com.hopla.demo.model.leanXcale.Clients;
+import com.hopla.demo.repository.leanXcale.ClientsRepository;
 import com.hopla.demo.service.ClientsService;
+import graphql.GraphQLException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class ClientsServiceImpl implements ClientsService {
@@ -20,7 +21,11 @@ public class ClientsServiceImpl implements ClientsService {
 
     @Override
     public Clients findById(String id) {
-        return repository.findById(id).get();
+        Optional<Clients> clients = repository.findById(id);
+        if(!clients.isPresent()){
+           throw new GraphQLException("No results found");
+        }
+        return clients.get();
     }
 
     @Override

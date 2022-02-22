@@ -1,8 +1,6 @@
 package com.hopla.demo.service;
 
-import com.hopla.demo.model.Clients;
-import com.hopla.demo.model.Loans;
-import org.checkerframework.checker.units.qual.C;
+import com.hopla.demo.model.leanXcale.Clients;
 import org.springframework.data.domain.Page;
 
 public interface ClientsService {

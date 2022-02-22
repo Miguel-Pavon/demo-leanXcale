@@ -8,6 +8,10 @@ spring:
     properties:
       hibernate:
         dialect: com.leanxcale.connector.hibernate.LxDialect
+  data:
+    mongodb:
+      database: demo_santander_portugal
+      uri: mongodb+srv://admin:admin@cluster0.hwdft.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
   datasource:
     url: jdbc:leanxcale://7bde527560231cd63981.lxc-db.com:1522/db
     username: app

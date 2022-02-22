@@ -1,4 +1,4 @@
-package com.hopla.demo.model;
+package com.hopla.demo.model.leanXcale;
 
 
 import lombok.Data;
