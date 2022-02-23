@@ -25,4 +25,9 @@ public class AccountsServiceImpl implements AccountsService {
     public Accounts findById(String id) {
         return repository.findById(id).get();
     }
+
+    @Override
+    public Accounts save(Accounts accounts) {
+        return repository.save(accounts);
+    }
 }

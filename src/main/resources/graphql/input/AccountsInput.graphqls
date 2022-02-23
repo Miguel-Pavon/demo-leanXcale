@@ -1,4 +1,4 @@
-type Accounts{
+input AccountsInput{
     dni:String
     name:String
     last_name:String

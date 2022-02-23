@@ -1,24 +1,30 @@
 package com.hopla.demo.model.mongo;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Id;
 
 @Document("accounts")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Accounts {
 
-    public Accounts(String user, String account_name, double saldo) {
-        this.user = user;
-        this.account_name = account_name;
-        this.saldo = saldo;
-    }
-
     @Id
-    public String id;
+    private String id;
 
-    public String user;
+    private String dni;
 
-    public String account_name;
+    private String name;
 
-    public double saldo;
+    private String last_name;
+
+    private String type;
+
+    private float balance;
 }

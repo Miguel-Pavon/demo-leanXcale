@@ -3,3 +3,7 @@ clientPage(page:Int!,perPage:Int!):ClientsPage @page(for:"Clients")
 fetchClientById(id:String!):Clients!
 fetchAccount:[Accounts]!
 }
+
+type Mutation{
+addAccount(input: AccountsInput!):Accounts!
+}

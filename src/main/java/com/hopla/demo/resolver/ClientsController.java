@@ -3,7 +3,6 @@ package com.hopla.demo.resolver;
 import com.hopla.demo.model.leanXcale.Clients;
 import com.hopla.demo.pagination.GraphPage;
 import com.hopla.demo.pagination.GraphPageInfo;
-import com.hopla.demo.pagination.PaginationUtil;
 import com.hopla.demo.service.ClientsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

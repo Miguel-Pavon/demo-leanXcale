@@ -10,4 +10,6 @@ public interface AccountsService {
     public List<Accounts> findByAll();
 
     public  Accounts findById(String id);
+
+    public Accounts save (Accounts accounts);
 }
