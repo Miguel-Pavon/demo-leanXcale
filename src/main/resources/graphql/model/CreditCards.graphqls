@@ -4,4 +4,5 @@ type CreditCards{
     type:String
     ccv:String
     expiration:String
+    transactions:[Transactions]
 }

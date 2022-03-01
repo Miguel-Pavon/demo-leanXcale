@@ -5,6 +5,7 @@ import com.hopla.demo.model.leanXcale.CreditCars;
 import com.hopla.demo.service.CreditCardsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.BatchMapping;
+import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
 import reactor.core.publisher.Mono;
 
@@ -14,6 +15,7 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+@SchemaMapping(typeName = "Clients")
 @Controller
 public class ClientCreditCards {
 

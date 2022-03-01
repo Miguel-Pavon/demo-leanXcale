@@ -19,14 +19,10 @@ public class ClientsController {
     ClientsService clientsService;
 
 
-
-
-
     @QueryMapping
     public Clients fetchClientById(@Argument  String id){
         return clientsService.findById(id);
     }
-
 
     @QueryMapping
     public GraphPage<Clients> clientPage(@Argument Integer page, @Argument Integer perPage){

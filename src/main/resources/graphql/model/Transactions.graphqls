@@ -1,0 +1,10 @@
+type Transactions{
+    id:String
+    creditCard:String
+    type:String
+    quantity:Float
+    expiration:String
+    execution_date:String
+}
+
+
