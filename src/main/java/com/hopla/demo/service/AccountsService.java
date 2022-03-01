@@ -1,9 +1,12 @@
 package com.hopla.demo.service;
 
 
+import com.hopla.demo.model.leanXcale.Transactions;
 import com.hopla.demo.model.mongo.Accounts;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public interface AccountsService {
 
@@ -12,4 +15,6 @@ public interface AccountsService {
     public  Accounts findById(String id);
 
     public Accounts save (Accounts accounts);
+
+    public Map<String, List<Accounts>> findAllById(Set<String> dni);
 }

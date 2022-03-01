@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Timestamp;
-import java.time.LocalDate;
+
 
 @Table(name="TRANSACTIONS",schema = "app")
 @Data
