@@ -1,7 +1,6 @@
 package com.hopla.demo.service.impl;
 
 
-import com.hopla.demo.model.leanXcale.CreditCars;
 import com.hopla.demo.model.leanXcale.Transactions;
 import com.hopla.demo.repository.leanXcale.TransactionsRepository;
 import com.hopla.demo.service.TransactionsService;

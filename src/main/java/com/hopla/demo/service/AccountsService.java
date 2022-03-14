@@ -1,7 +1,6 @@
 package com.hopla.demo.service;
 
 
-import com.hopla.demo.model.leanXcale.Transactions;
 import com.hopla.demo.model.mongo.Accounts;
 
 import java.util.List;

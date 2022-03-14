@@ -1,7 +1,6 @@
 package com.hopla.demo.resolver.model;
 
 import com.hopla.demo.model.leanXcale.Clients;
-import com.hopla.demo.model.leanXcale.CreditCars;
 import com.hopla.demo.model.mongo.Accounts;
 import com.hopla.demo.service.AccountsService;
 import org.springframework.beans.factory.annotation.Autowired;

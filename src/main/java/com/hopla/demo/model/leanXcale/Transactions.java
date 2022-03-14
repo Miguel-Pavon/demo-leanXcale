@@ -17,7 +17,7 @@ public class Transactions {
 
     @Id
     @Column(name = "ID")
-    private String id;
+    private long id;
 
     @Column(name = "CREDIT_CARD")
     private String creditCard;
